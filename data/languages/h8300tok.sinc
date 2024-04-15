@@ -5,13 +5,8 @@ define token ins1(8)
 	reg8hi=(4,7)
 	reg8lo=(0,3)
 
-@ifdef ADVANCED
     reg16hi=(4,7)
     reg16lo=(0,3)
-@else
-	reg16hi=(4,6)
-	reg16lo=(0,2)
-@endif
 	reg3hi=(4,6)
 	reg3lo=(0,2)
 
@@ -27,13 +22,13 @@ define token ins1(8)
 	b7=(7,7)
 	lnyb=(0,3)
 	hnyb=(4,7)
-@ifdef ADVANCED
     reg32hi=(4,6)
     reg32lo=(0,2)
+	reg32but16hi=(4,6)
+	reg32but16lo=(0,2)
 
     b67=(6,7)
     trapn=(4,5)
-@endif
 ;
 
 define token ins2(16)
